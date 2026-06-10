@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>CajuNews — Jornal Escolar Turma 202</title>
+<title>CajuNews — Jornal Escolar Turma 201</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -63,7 +63,7 @@ a{color:inherit;text-decoration:none}
   transform:translateY(16px);transition:transform .3s;
 }
 .modal-overlay.aberto .modal{transform:none}
-.modal-fechar{position:absolute;top:1rem;right:1rem;background:none;border:none;cursor:pointer;font-size:1.4rem;color:var(--cinza)}
+.modal-fechar{position:absolute;top:1rem;right:1rem;background:none;border:none;cursor:pointer;font-size:1.4rem;color:var(--azul-escuro)}
 .modal-tag{font-family:'Oswald',sans-serif;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--verde);margin-bottom:.6rem}
 .modal-titulo{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;line-height:1.2;margin-bottom:1rem}
 .modal-corpo{font-size:1rem;line-height:1.85;color:var(--texto2)}
@@ -97,7 +97,7 @@ a{color:inherit;text-decoration:none}
 }
 .nav-logo{display:flex;align-items:center;gap:.6rem;flex-shrink:0}
 .nav-logo img{width:36px;height:36px;object-fit:contain}
-.nav-logo-txt{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:900;letter-spacing:-.02em}
+.nav-logo-txt{font-family:'Times new rowan',serif;font-size:1.2rem;font-weight:900;letter-spacing:-.02em}
 .nav-logo-txt span{color:var(--verde)}
 .nav-links{display:flex;list-style:none;gap:0}
 .nav-links a{
@@ -194,7 +194,7 @@ a{color:inherit;text-decoration:none}
   grid-column:3/4;
 }
 .manchetes-texto h2{
-  font-family:'EB Garamond',serif;font-size:1.05rem;font-weight:700;
+  font-family:'Times new rowan',serif;font-size:1.05rem;font-weight:700;
   line-height:1.35;margin-bottom:.8rem;
 }
 .manchetes-texto p{
@@ -227,7 +227,7 @@ a{color:inherit;text-decoration:none}
 .card-resumo{font-size:.85rem;line-height:1.68;color:var(--texto2)}
 .card-footer{display:flex;justify-content:space-between;align-items:center;margin-top:.7rem;padding-top:.6rem;border-top:1px solid var(--borda)}
 .card-meta{font-family:'Oswald',sans-serif;font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;color:var(--cinza)}
-.btn-leia{font-family:'Oswald',sans-serif;font-size:.55rem;letter-spacing:.12em;text-transform:uppercase;color:var(--verde);background:none;border:none;cursor:pointer;padding:0;transition:letter-spacing .2s}
+.btn-leia{font-family:'Oswald',sans-serif;font-size:.55rem;letter-spacing:.12em;text-transform:uppercase;color:var(--verde-escuro-azulado);background:none;border:none;cursor:pointer;padding:0;transition:letter-spacing .2s}
 .btn-leia:hover{letter-spacing:.18em}
 
 /* ══ CARD DESTAQUE (2 col) ══ */
@@ -463,9 +463,9 @@ footer{
     </g>
     <text x="55" y="320" font-family="Georgia,serif" font-size="290" fill="rgba(255,255,255,.025)" font-weight="900" letter-spacing="-12">CJ</text>
     <!-- Chamada de capa -->
-    <text x="70" y="148" font-family="Georgia,serif" font-size="13" fill="rgba(255,255,255,.5)" letter-spacing="2">COLÉGIO CALDAS JÚNIOR · TURMA 202 · PORTO ALEGRE · RS</text>
+    <text x="70" y="148" font-family="Georgia,serif" font-size="13" fill="rgba(255,255,255,.5)" letter-spacing="2">COLÉGIO CALDAS JÚNIOR · TURMA 201 · PORTO ALEGRE · RS</text>
     <text x="70" y="200" font-family="Georgia,serif" font-size="46" fill="white" font-weight="bold" letter-spacing="-.5">Somos os alunos</text>
-    <text x="70" y="255" font-family="Georgia,serif" font-size="46" fill="white" font-weight="bold" letter-spacing="-.5">da Turma 202</text>
+    <text x="70" y="255" font-family="Georgia,serif" font-size="46" fill="white" font-weight="bold" letter-spacing="-.5">da Turma 201</text>
     <rect x="70" y="274" width="310" height="2" fill="rgba(255,255,255,.35)"/>
     <text x="70" y="298" font-family="Georgia,serif" font-size="13" fill="rgba(255,255,255,.55)" letter-spacing="1">Projeto PIBID · PUCRS · Letras &amp; História</text>
   </svg>
@@ -787,7 +787,7 @@ const noticias = [
   { tag:'Trabalho · Direitos', titulo:'Fim da Escala 6×1: o que está em jogo?', corpo:'<p>A escala 6×1 — seis dias trabalhados para um de descanso — está no centro de um debate nacional urgente. A PEC que propõe a alteração já movimenta o Congresso Nacional.</p><p>Especialistas alertam para risco elevado de doenças cardiovasculares e burnout nesse regime.</p><p>"Trabalhar seis dias para descansar um não é equilíbrio — é exaustão normalizada."</p>' },
   { tag:'Educação · Política', titulo:'Privatização das Escolas Públicas do RS', corpo:'<p>O Rio Grande do Sul vive uma disputa acirrada sobre o futuro da educação pública. Propostas de gestão privada de escolas estaduais dividem famílias, professores e gestores.</p><p>"A escola pública é patrimônio do povo — não pode virar mercadoria."</p>' },
   { tag:'Escola · Infraestrutura', titulo:'Reforma das Quadras Externas: quando vai acontecer?', corpo:'<p>As quadras esportivas externas do Colégio Caldas Júnior aguardam há meses uma reforma. Alunos reclamam do piso irregular, das traves danificadas e da falta de iluminação.</p><p>A direção confirma que o orçamento foi aprovado e as obras iniciam no próximo semestre.</p>' },
-  { tag:'Copa do Mundo · Futebol', titulo:'Brasil na briga pelo Hexa: sonho ou realidade?', corpo:'<p>O maior torneio de futebol do planeta volta a agitar corações. A seleção brasileira entra na disputa carregando o peso do hexacampeonato.</p><p>A Turma 202 debateu: quais são as reais chances do Brasil? A maioria acredita que o elenco tem qualidade, mas precisa de unidade tática.</p>' },
+  { tag:'Copa do Mundo · Futebol', titulo:'Brasil na briga pelo Hexa: sonho ou realidade?', corpo:'<p>O maior torneio de futebol do planeta volta a agitar corações. A seleção brasileira entra na disputa carregando o peso do hexacampeonato.</p><p>A Turma 201 debateu: quais são as reais chances do Brasil? A maioria acredita que o elenco tem qualidade, mas precisa de unidade tática.</p>' },
   { tag:'Saúde · Estilo de Vida', titulo:'Fisiculturismo: disciplina, estética e controvérsia', corpo:'<p>O fisiculturismo ganha adeptos entre jovens, mas levanta questões sobre saúde, uso de substâncias e padrões de beleza impostos pela mídia.</p><p>O segredo está no equilíbrio entre treino, alimentação e saúde mental.</p><p><strong>Atenção:</strong> Uso de substâncias sem acompanhamento médico pode causar danos irreversíveis.</p>' },
 ];
 

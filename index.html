@@ -11,12 +11,12 @@ html{scroll-behavior:smooth}
 
 :root{
   --verde:#0f6d2c;
-  --vermelho rosado:#bf2217;
-  --amarelo:#d4920a;
+  --vermelho-rosado:#bf2217;
+  --amarelo-alaranjado:#d4920a;
   --ink:#111;
   --papel:#fdfaf4;
   --papel2:#f4f0e6;
-  --cinza:#666;
+  --cinza-azulado:#666;
   --linha:#ddd;
   --bg:var(--papel);
   --bg2:#fff;
@@ -35,7 +35,7 @@ html{scroll-behavior:smooth}
 body{
   background:var(--bg);
   color:var(--texto);
-  font-family:'EB Garamond',Georgia,serif;
+  font-family:'Times new rowan',Georgia,serif;
   font-size:1rem;
   line-height:1.7;
   transition:background .3s,color .3s;
@@ -151,7 +151,7 @@ a{color:inherit;text-decoration:none}
 .masthead-sub{
   display:flex;align-items:center;justify-content:center;gap:1.2rem;
   margin:.7rem 0 .5rem;
-  font-family:'Oswald',sans-serif;font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--cinza);
+  font-family:'Times new rowan',sans-serif;font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--azul-escuro);
 }
 .masthead-sub::before,.masthead-sub::after{content:'';flex:1;max-width:180px;height:1px;background:var(--borda)}
 
@@ -722,7 +722,7 @@ footer{
     <div class="lista-coments" id="listaComents">
       <div class="coment-item">
         <div class="coment-autor">Redação CajuNews · Set 2026</div>
-        <p class="coment-texto">Bem-vindos ao CajuNews! Estamos animados para compartilhar as pautas que mais importam para nossa comunidade escolar.</p>
+        <p class="coment-texto">Bem-vindos ao CajuNews! Estamos animados para compartilhar as pautas que mais importam para nossa comunidade escola.</p>
       </div>
     </div>
   </div>
@@ -758,7 +758,7 @@ footer{
       <div class="footer-col">
         <h4>Equipe</h4>
         <ul>
-          <li><a href="#">Turma 202</a></li>
+          <li><a href="#">Turma 201</a></li>
           <li><a href="#">Pibidianas PUCRS</a></li>
           <li><a href="#">Letras &amp; História</a></li>
           <li><a href="#">Prof. Camilo Silva</a></li>
@@ -776,14 +776,14 @@ footer{
     </div>
     <div class="footer-bottom">
       <span>© 2026 CajuNews · Colégio Caldas Júnior</span>
-      <span>Feito com 💚 pela Turma 202</span>
+      <span>Feito pela Turma 201</span>
     </div>
   </div>
 </footer>
 
 <script>
 const noticias = [
-  { tag:'Manchete Principal', titulo:'Turma 202 lança o CajuNews', corpo:'<p>Somos os alunos da turma 202 do Colégio Caldas Júnior. Este jornal foi projetado juntamente com as pibidianas da PUCRS dos cursos de Letras e História, com o objetivo de informar nossa comunidade escolar.</p><p>Nessa edição: escala 6×1, privatização das escolas do RS, fisiculturismo, Copa do Mundo e reforma das quadras externas.</p>' },
+  { tag:'Manchete Principal', titulo:'Turma 201 lança o CajuNews', corpo:'<p>Somos os alunos da turma 201 do Colégio Caldas Júnior. este jornal foi projetado juntamente com as pibidianas da PUCRS dos cursos de Letras e História, com o objetivo de informar nossa comunidade escolar.</p><p>Nessa edição: escala 6×1, privatização das escolas do RS, fisiculturismo, Copa do Mundo e reforma das quadras externas.</p>' },
   { tag:'Trabalho · Direitos', titulo:'Fim da Escala 6×1: o que está em jogo?', corpo:'<p>A escala 6×1 — seis dias trabalhados para um de descanso — está no centro de um debate nacional urgente. A PEC que propõe a alteração já movimenta o Congresso Nacional.</p><p>Especialistas alertam para risco elevado de doenças cardiovasculares e burnout nesse regime.</p><p>"Trabalhar seis dias para descansar um não é equilíbrio — é exaustão normalizada."</p>' },
   { tag:'Educação · Política', titulo:'Privatização das Escolas Públicas do RS', corpo:'<p>O Rio Grande do Sul vive uma disputa acirrada sobre o futuro da educação pública. Propostas de gestão privada de escolas estaduais dividem famílias, professores e gestores.</p><p>"A escola pública é patrimônio do povo — não pode virar mercadoria."</p>' },
   { tag:'Escola · Infraestrutura', titulo:'Reforma das Quadras Externas: quando vai acontecer?', corpo:'<p>As quadras esportivas externas do Colégio Caldas Júnior aguardam há meses uma reforma. Alunos reclamam do piso irregular, das traves danificadas e da falta de iluminação.</p><p>A direção confirma que o orçamento foi aprovado e as obras iniciam no próximo semestre.</p>' },
